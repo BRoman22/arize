@@ -1,0 +1,23 @@
+.ball {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+      70.71% 62.51% at 18.57% 9.64%,
+      #ac9de1 0%,
+      #7e5cf2 60.44%,
+      #3716a5 100%
+    ),
+    radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(26, 7, 92, 0.2) 100%
+    ),
+    rgba(231, 231, 231, 1);
+
+  box-shadow: 9.02px 15.04px 24.06px 0px rgba(255, 255, 255, 0.2) inset,
+    -9.02px -15.04px 12.93px 0px rgba(194, 194, 194, 0.2) inset;
+  backdrop-filter: blur(30.07518768310547px);
+}

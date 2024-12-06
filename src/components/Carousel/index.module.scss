@@ -1,0 +1,47 @@
+.carousel__list {
+  padding: 0 60px;
+  gap: 24px;
+  display: flex;
+  overflow-x: scroll;
+
+  scrollbar-width: 0px;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+}
+
+.link {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      fill: #5d32ef;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.rotate {
+  /* transform: rotateZ(-90deg); */
+  /* transform: rotateY(90deg); */
+  transform: rotateY(180deg);
+
+  /* rotate: 0 1 1 90deg; */
+  // rotate: y 180deg;
+  /* rotate: 90deg, 90deg, 0; */
+
+  transition: all 0.5s ease-in-out;
+}

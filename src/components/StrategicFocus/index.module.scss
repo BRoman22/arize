@@ -1,0 +1,22 @@
+.section__stacking {
+  /* background-color: var(--brand-colors--isabelline); */
+  filter: drop-shadow(0 5px 50px #18303f1a);
+  border-top: 2px solid #1818211a;
+  flex-flow: column;
+  display: flex;
+  position: sticky;
+  top: 7rem;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+
+  &:nth-child(1) {
+    background-color: aqua;
+  }
+  &:nth-child(2) {
+    background-color: cadetblue;
+  }
+  &:nth-child(3) {
+    background-color: coral;
+  }
+}

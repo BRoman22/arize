@@ -1,0 +1,51 @@
+.header {
+  height: 72px;
+  padding: 0 60px;
+  background-color: var(--white);
+  border-bottom: solid 0.5px var(--black);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  margin: auto 0;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  a {
+    display: block;
+    max-height: 24px;
+  }
+  a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 56px;
+  }
+}
