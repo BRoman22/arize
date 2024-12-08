@@ -1,0 +1,62 @@
+.button {
+  font-family: Roboto;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.button__large {
+  height: 44px;
+  padding: 13.5px 28px;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 44px;
+}
+
+.button__small {
+  height: 32px;
+  padding: 9.5px 20px;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 32px;
+}
+
+.button__primary {
+  width: fit-content;
+  background-color: var(--violet);
+  color: var(--white);
+  border: none;
+
+  &:hover {
+    background-color: var(--black);
+  }
+}
+
+.button__secondary {
+  width: fit-content;
+  background-color: var(--white);
+  color: var(--violet);
+  border: 0.5px solid var(--violet);
+}
+
+.button__accentBlack {
+  width: 100%;
+  border-radius: 0;
+  background-color: var(--black);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--violet);
+  }
+}
+
+.button__accentViolet {
+  width: 100%;
+  border-radius: 0;
+  background-color: var(--violet);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--black);
+  }
+}

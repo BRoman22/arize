@@ -1,9 +1,9 @@
-interface ArrowProps {
+interface IconProps {
   nameClass?: string;
   onClick?: () => void;
 }
 
-const Arrow = ({ nameClass, onClick }: ArrowProps) => {
+const Arrow = ({ nameClass, onClick }: IconProps) => {
   return (
     <svg
       width="64"

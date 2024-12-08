@@ -1,6 +1,6 @@
 .header {
-  height: 72px;
-  padding: 0 60px;
+  height: 80px;
+  padding: 0 90px;
   background-color: var(--white);
   border-bottom: solid 0.5px var(--black);
   position: sticky;
@@ -20,18 +20,24 @@
   justify-content: space-between;
   align-items: center;
   font-family: Roboto;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
 
-  svg {
-    width: 24px;
-    height: 24px;
-  }
-  a {
+  a,
+  li {
     display: block;
-    max-height: 24px;
+    max-height: 28px;
+    user-select: none;
   }
+
+  li:first-child {
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
   a:hover {
     font-weight: 700;
     text-decoration: underline;
@@ -41,11 +47,61 @@
 @media screen and (max-width: 1440px) {
   .header {
     height: 64px;
+    padding: 0 60px;
+  }
+  .menu {
+    font-size: 14px;
+    line-height: 16px;
+
+    a,
+    .li {
+      max-height: 24px;
+    }
+
+    li:first-child {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
     height: 56px;
+    padding: 0 24px;
+  }
+
+  .menu {
+    li:last-child {
+      display: flex;
+      width: 24px;
+      height: 24px;
+
+      svg {
+        margin: auto;
+      }
+    }
+  }
+
+  .mobile__menu {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 24px;
+    background-color: var(--white);
+    z-index: 100;
+    position: absolute;
+    top: 56px;
+
+    li,
+    a {
+      display: block;
+    }
+
+    a {
+      padding: 16px 0;
+    }
   }
 }

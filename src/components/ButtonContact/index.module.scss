@@ -1,0 +1,55 @@
+.wrapper {
+  width: 216px;
+  border: 0.5px solid var(--black);
+  border-radius: 44px;
+  height: 44px;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  transition: all 0.6s ease-in 1s;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--violet);
+    transition: all 0.6s ease-in;
+
+    .button {
+      background-color: var(--violet);
+      border-color: var(--violet);
+      width: inherit;
+      transition: all 0.6s ease-in;
+    }
+
+    .layout {
+      stroke: var(--violet);
+      transition: all 0.6s ease-in;
+    }
+  }
+}
+
+.button {
+  position: absolute;
+  top: -0.5px;
+  background-color: var(--black);
+  color: var(--white);
+  width: 132px;
+  height: 44px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  border-radius: 44px;
+  transition: all 0.6s ease-in 1s;
+  z-index: 100;
+  cursor: pointer;
+  // box-shadow: -4px -4px 12px 0px rgba(36, 29, 88, 0.12),
+  //   0px 0px 4px 0px rgba(8, 27, 27, 0.08);
+}
+
+.layout {
+  position: absolute;
+  top: -0.5px;
+  right: -0.5px;
+  transition: all 0.6s ease-in 1s;
+  cursor: pointer;
+}

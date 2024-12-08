@@ -1,4 +1,9 @@
-const Arrow = () => {
+interface IconProps {
+  nameClass?: string;
+  onClick?: () => void;
+}
+
+const Logo = ({ nameClass, onClick }: IconProps) => {
   return (
     <svg
       width="76"
@@ -6,6 +11,8 @@ const Arrow = () => {
       viewBox="0 0 76 78"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={nameClass}
+      onClick={() => onClick?.()}
     >
       <path
         fillRule="evenodd"
@@ -17,4 +24,4 @@ const Arrow = () => {
   );
 };
 
-export default Arrow;
+export default Logo;

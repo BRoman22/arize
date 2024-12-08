@@ -3,6 +3,10 @@ export { default as Carousel } from './Carousel';
 export { default as TestCard } from './TestCard';
 export { default as StrategicFocus } from './StrategicFocus';
 export { default as Ball } from './Ball';
+export { default as ButtonContact } from './ButtonContact';
+export { default as Button } from './Button';
 
 export { default as Arrow } from './ui/Arrow';
 export { default as Logo } from './ui/Logo';
+export { default as BurgerIcon } from './ui/BurgerIcon';
+export { default as CloseCross } from './ui/CloseCross';
