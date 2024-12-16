@@ -1,10 +1,9 @@
 .wrapper {
-  width: 216px;
+  width: 21.60001rem;
+  height: 4.4001rem;
   border: 0.5px solid var(--black);
-  border-radius: 44px;
-  height: 44px;
+  border-radius: 4.4001rem;
   display: flex;
-  gap: 16px;
   position: relative;
   transition: all 0.6s ease-in 1s;
   cursor: pointer;
@@ -27,13 +26,13 @@
   top: -0.5px;
   background-color: var(--black);
   color: var(--white);
-  width: 132px;
-  height: 44px;
+  width: 13.2001rem;
+  height: 4.4001rem;
   font-family: Roboto;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.4em;
+  line-height: 1.142;
   font-weight: 600;
-  border-radius: 44px;
+  border-radius: 4.4001rem;
   transition: all 0.6s ease-in 1s;
   z-index: 50;
   cursor: pointer;
@@ -43,7 +42,9 @@
 .layout {
   position: absolute;
   top: -0.5px;
-  right: 52px;
+  right: 5.2rem;
   transition: all 0.6s ease-in 1s;
   cursor: pointer;
+  width: 1.6rem;
+  height: 4.4rem;
 }

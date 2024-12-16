@@ -91,6 +91,11 @@
       div {
         background-size: 100% 140%;
 
+        p {
+          max-width: 110rem;
+          padding: 0.8rem 0 5.6rem;
+        }
+
         &:hover {
           background-size: 105% 145%;
         }

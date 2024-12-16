@@ -26,7 +26,7 @@ const InvestCard = ({ cardData }: InvestCardProps) => {
             <img src={titleImage} alt={name} />
             <span className={styles.rate}>{rate}</span>
           </div>
-          <span className={styles.subtitle}>{subtitle}</span>
+          <p className={styles.subtitle}>{subtitle}</p>
           {width > SCREEN_WIDTH.M && (
             <div className={styles.buttons}>
               <Button title={investCard[0]} type="primary" />
