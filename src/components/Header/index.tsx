@@ -1,8 +1,8 @@
 import styles from './index.module.scss';
 import { LangContext } from '../../contexts';
-import { useState, useContext } from 'react';
+import { useState, useContext, useRef } from 'react';
 import { Logo, BurgerIcon, CloseCross } from '../../components';
-import { useResaize } from '../../hooks';
+import { useResaize, useClickOutside } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
 
 const Header = () => {
@@ -12,16 +12,19 @@ const Header = () => {
 
   const handleClick = () => setIsOpen(!isOpen);
 
+  const ref = useRef<HTMLElement>(null);
+  useClickOutside(ref, handleClick);
+
   const navLinks = header.map(item => ({
     name: item.label,
     link: `#${item.value}`,
   }));
 
   const mobileMenu = (
-    <nav className={styles.mobile__menu}>
+    <nav className={styles.mobile__menu} ref={ref}>
       <ul>
         {navLinks.map((item, index) => (
-          <li key={index}>
+          <li key={index} onClick={handleClick}>
             <a href={item.link}>{item.name}</a>
           </li>
         ))}
