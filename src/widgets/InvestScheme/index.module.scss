@@ -1,0 +1,202 @@
+.title {
+  font-family: Fors;
+  font-size: 6em;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10rem 6rem 0;
+  font-variant: small-caps;
+
+  em {
+    font-weight: 600;
+    color: var(--violet);
+  }
+}
+
+.scheme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  width: 86.001rem;
+  column-gap: 6rem;
+  margin: 8rem auto 10rem;
+  grid-template-areas:
+    '. rightOne'
+    'leftOne .'
+    '. rightTwo'
+    'leftTwo .'
+    '. rightThree';
+
+  li {
+    min-height: 13.2rem;
+  }
+
+  li:nth-child(even) {
+    text-align: end;
+  }
+
+  li:nth-child(1) {
+    grid-area: rightOne;
+  }
+
+  li:nth-child(2) {
+    grid-area: leftOne;
+  }
+
+  li:nth-child(3) {
+    grid-area: rightTwo;
+  }
+
+  li:nth-child(4) {
+    grid-area: leftTwo;
+  }
+
+  li:nth-child(5) {
+    grid-area: rightThree;
+
+    p {
+      color: var(--violet);
+    }
+  }
+
+  p {
+    font-family: Fors;
+    font-size: 3.2em;
+    font-weight: 500;
+    line-height: 1.125;
+    font-variant: small-caps;
+  }
+
+  span {
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.2;
+    display: block;
+    padding: 1.6rem 0 0;
+  }
+}
+
+.y {
+  height: 52.9rem;
+  width: fit-content;
+  border-left: 0.5px solid var(--black);
+  position: absolute;
+  top: 2.4rem;
+  left: 43rem;
+
+  div {
+    position: absolute;
+  }
+
+  div:nth-child(-n + 4) {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--black);
+    border-radius: 1.2rem;
+    left: -0.65rem;
+  }
+
+  div:last-child {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--violet);
+    border-radius: 2.8rem;
+    top: 51rem;
+    left: -1.45rem;
+  }
+
+  div:nth-child(1) {
+    top: -0.6rem;
+  }
+
+  div:nth-child(2) {
+    top: 12rem;
+  }
+
+  div:nth-child(3) {
+    top: 25.2rem;
+  }
+
+  div:nth-child(4) {
+    top: 38.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    padding: 40px 32px 0;
+  }
+
+  .scheme {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px 64px 68px;
+    gap: 24px;
+
+    li {
+      min-height: 84px;
+    }
+
+    li:nth-child(even) {
+      text-align: start;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.166;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      padding: 8px 0 0;
+    }
+
+    .y {
+      height: 446px;
+      top: 14px;
+      left: -30px;
+
+      div:nth-child(-n + 4) {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        left: -6px;
+      }
+
+      div:last-child {
+        width: 28px;
+        height: 28px;
+        border-radius: 28px;
+        top: 426px;
+        left: -14px;
+      }
+
+      div:nth-child(1) {
+        top: -6px;
+      }
+
+      div:nth-child(2) {
+        top: 102px;
+      }
+
+      div:nth-child(3) {
+        top: 210px;
+      }
+
+      div:nth-child(4) {
+        top: 318px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .scheme {
+    width: 252px;
+    margin: 32px auto 64px 68px;
+  }
+}

@@ -1,6 +1,5 @@
 export { default as Header } from './Header';
 export { default as Carousel } from './Carousel';
-export { default as StrategicFocus } from './StrategicFocus';
 export { default as ButtonContact } from './ButtonContact';
 export { default as Button } from './Button';
 export { default as InvestCard } from './InvestCard';

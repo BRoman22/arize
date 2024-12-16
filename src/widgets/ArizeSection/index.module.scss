@@ -1,4 +1,4 @@
-.section {
+.arize {
   background-image: url('../../assets/images/mainDesktop.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .section {
+  .arize {
     background-image: url('../../assets/images/mainMobile.png');
     background-position: center;
     background-size: cover;
@@ -77,7 +77,7 @@
 }
 
 @media screen and (max-width: 430px) {
-  .section {
+  .arize {
     height: 544px;
   }
 }

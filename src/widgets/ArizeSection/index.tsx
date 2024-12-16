@@ -10,7 +10,7 @@ const ArizeSection = () => {
   const { capitalSection, buttonContact } = useContext(LangContext);
 
   return (
-    <section className={styles.section}>
+    <section className={styles.arize}>
       <div className={styles.wrapper}>
         <Logo nameClass={styles.logo} />
         <span className={styles.title}>rize Capital</span>
