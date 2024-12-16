@@ -1,11 +1,23 @@
 @import './normalize.css';
+@import './assets/fonts/fonts.css';
 
 body {
-  font-family: TT Fors Trial, Roboto, Helvetica, sans-serif;
+  font-family: 'Fors', 'Roboto', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
+  color: var(--black);
 }
+
+:root {
+  font-size: 0.69444vw;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 0.97663vw;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,11 +60,6 @@ button,
 input,
 textarea {
   font-family: inherit;
-}
-
-:root {
-  color: var(--black);
-  scroll-behavior: smooth;
 }
 
 :root {

@@ -1,80 +1,43 @@
 .section {
-  background-image: url('../../assets/images/mainDesctop.png');
+  background-image: url('../../assets/images/mainDesktop.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 65.601rem;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .wrapper {
-  padding: 150px 0 0 90px;
+  padding: 11.9001rem 6.0001rem 0;
 
   .logo {
-    width: 84px;
-    height: 84px;
+    width: 6.4001rem;
+    height: 6.4001rem;
   }
 
   .title {
-    font-size: 110px;
-    line-height: 110px;
-    font-family: 'TT Fors Trial';
+    font-size: 9.20006em;
+    line-height: 1;
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
     user-select: none;
+    font-variant: small-caps;
   }
 
   .subtitle__header {
-    margin-top: 67px;
+    margin-top: 5.6rem;
   }
 
   .subtitle__header,
   .subtitle__footer {
-    font-family: TT Fors Trial;
     font-weight: 400;
     color: rgba(3, 1, 25, 1);
     display: block;
     user-select: none;
-    font-size: 38px;
-    line-height: 43px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .section {
-    height: 656px;
-    background-position: right;
-  }
-
-  .wrapper {
-    padding: 119px 0 0 60px;
-
-    .logo {
-      width: 64px;
-      height: 64px;
-    }
-
-    .title {
-      font-size: 92px;
-      line-height: 92px;
-    }
-
-    .subtitle__header {
-      margin-top: 56px;
-    }
-
-    .subtitle__header,
-    .subtitle__footer {
-      font-size: 32px;
-      line-height: 36px;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    padding: 105px 0 0 58px;
+    font-size: 3.20002em;
+    line-height: 1.125;
+    font-variant: small-caps;
   }
 }
 
@@ -113,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
   .section {
     height: 544px;
   }

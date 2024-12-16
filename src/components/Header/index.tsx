@@ -4,7 +4,6 @@ import { useState, useContext } from 'react';
 import { Logo, BurgerIcon, CloseCross } from '../../components';
 import { useResaize } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
-import { createPortal } from 'react-dom';
 
 const Header = () => {
   const { header } = useContext(LangContext);
@@ -14,11 +13,11 @@ const Header = () => {
   const handleClick = () => setIsOpen(!isOpen);
 
   const navLinks = header.map(item => ({
-    name: item.label.toUpperCase(),
+    name: item.label,
     link: `#${item.value}`,
   }));
 
-  const mobileMenu = createPortal(
+  const mobileMenu = (
     <nav className={styles.mobile__menu}>
       <ul>
         {navLinks.map((item, index) => (
@@ -27,8 +26,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-    </nav>,
-    document.body,
+    </nav>
   );
 
   return (
