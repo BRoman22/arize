@@ -2,18 +2,24 @@ import styles from './index.module.scss';
 import { useContext } from 'react';
 import { LangContext } from '../../contexts';
 import { Button } from '../../components';
+import { useResaize } from '../../hooks';
+import { SCREEN_WIDTH } from '../../constants';
 import ReactPlayer from 'react-player';
 import play from '../../assets/images/play.png';
 import thumbnailMock from '../../assets/images/thumbnailMock.png';
 
 const AboutUs = () => {
+  const width = useResaize();
   // c бэка будет приходить картинка и видео
   const { title, button } = useContext(LangContext).aboutUs;
   const urlVideo =
     'https://cdn.prod.website-files.com/65de26c3b97c2ffff662b7e4/660d6258d5eee27ecff2495b_How we work with founders [preview]-transcode.mp4';
 
   return (
-    <section id="about">
+    <section
+      id="about"
+      style={{ minHeight: width > SCREEN_WIDTH.L ? '84rem' : '68rem' }}
+    >
       <h1 className={styles.title}>
         {title.slice(0, 6)}
         <em>{title.slice(6)}</em>
