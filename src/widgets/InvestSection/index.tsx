@@ -6,7 +6,7 @@ import { TInvestCard } from '../../constants';
 import { useResaize } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
 
-import spaceX from '../../assets/images/spaceX.svg';
+import spaceXMock from '../../assets/images/spaceXMock.svg';
 import investCardMock from '../../assets/images/investCardMock.png';
 
 const InvestSection = () => {
@@ -17,7 +17,7 @@ const InvestSection = () => {
   const cardMock: TInvestCard = {
     id: 1,
     name: 'SpaceX',
-    titleImage: spaceX,
+    titleImage: spaceXMock,
     rate: '5x',
     subtitle:
       'X, formerly Twitter, is a social media platform for real-time communication and user-generated content',

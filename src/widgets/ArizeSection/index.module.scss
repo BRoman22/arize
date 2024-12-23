@@ -41,12 +41,17 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .arize {
+    background-image: url('../../assets/images/desktopM.png');
+  }
+}
+
 @media screen and (max-width: 768px) {
   .arize {
-    background-image: url('../../assets/images/mainMobile.png');
+    background-image: url('../../assets/images/tablet.png');
     background-position: center;
-    background-size: cover;
-    height: 944px;
+    height: 900px;
   }
 
   .wrapper {
@@ -78,6 +83,8 @@
 
 @media screen and (max-width: 430px) {
   .arize {
+    background-image: url('../../assets/images/mobile.png');
+    background-position: bottom;
     height: 544px;
   }
 }

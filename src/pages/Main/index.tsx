@@ -3,6 +3,7 @@ import {
   InvestSection,
   StrategicFocus,
   InvestScheme,
+  AboutUs,
 } from '../../widgets';
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
       <InvestSection />
       <StrategicFocus />
       <InvestScheme />
+      <AboutUs />
     </>
   );
 };

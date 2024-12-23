@@ -102,6 +102,10 @@ const enLangConfig = {
       },
     ],
   },
+  aboutUs: {
+    title: 'About us',
+    button: 'Learn more about us',
+  },
   buttonContact: 'Сontact us',
   investCard: ['More details', 'Invest'],
 };
