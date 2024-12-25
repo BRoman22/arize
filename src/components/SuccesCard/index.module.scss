@@ -1,0 +1,49 @@
+.succesCard {
+  width: 42.4rem;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid var(--black);
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: max(5.6rem, 56px);
+    padding: max(1.2rem, 12px);
+    margin: max(4rem, 40px) 0 6rem;
+    border-top: 1px dashed var(--black);
+    border-bottom: 1px dashed var(--black);
+  }
+
+  span {
+    font-family: Helvetica;
+    font-size: 7.2em;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 max(1.6rem, 16px);
+  }
+
+  p {
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 max(6rem, 60px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .succesCard {
+    width: 288px;
+    max-height: 360px;
+
+    img {
+      margin: max(4rem, 40px) 0 52px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.16;
+      margin: 0 0 52px;
+    }
+  }
+}

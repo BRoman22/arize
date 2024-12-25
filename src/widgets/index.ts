@@ -3,3 +3,4 @@ export { default as InvestSection } from './InvestSection';
 export { default as StrategicFocus } from './StrategicFocus';
 export { default as InvestScheme } from './InvestScheme';
 export { default as AboutUs } from './AboutUs';
+export { default as SuccesStories } from './SuccesStories';

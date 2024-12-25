@@ -2,7 +2,6 @@ import styles from './index.module.scss';
 import { useState, useContext } from 'react';
 import { LangContext } from '../../contexts';
 import { InvestCard, Button, Carousel } from '../../components';
-import { TInvestCard } from '../../constants';
 import { useResaize } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
 
@@ -14,7 +13,7 @@ const InvestSection = () => {
   const { title, subtitle, statistic, title2, subtitle2, showButton } =
     useContext(LangContext).investSection;
 
-  const cardMock: TInvestCard = {
+  const dataMock = Array(5).fill({
     id: 1,
     name: 'SpaceX',
     titleImage: spaceXMock,
@@ -22,21 +21,17 @@ const InvestSection = () => {
     subtitle:
       'X, formerly Twitter, is a social media platform for real-time communication and user-generated content',
     backImage: investCardMock,
-  };
-
-  const yy = Array(5).fill(cardMock);
-
-  const getCards = () => (showMoreButton ? yy : yy?.slice(0, 4));
+  });
 
   const [showMoreButton, setShowMoreButton] = useState(
-    yy.length > 4 ? false : true,
+    dataMock.length > 4 ? false : true,
   );
 
-  const ee: JSX.Element[] = Array(4).fill(
-    <>
-      <InvestCard cardData={cardMock} />
-    </>,
-  );
+  const getCards = () => (showMoreButton ? dataMock : dataMock?.slice(0, 4));
+
+  const carouselData: JSX.Element[] = dataMock.map(item => (
+    <InvestCard key={item.id} cardData={item} />
+  ));
 
   const handleShowMoreButton = () => setShowMoreButton(!showMoreButton);
 
@@ -66,7 +61,7 @@ const InvestSection = () => {
           ))}
         </ul>
       ) : (
-        <Carousel data={ee} style={{ margin: '32px 0 24px' }} />
+        <Carousel data={carouselData} style={{ margin: '32px 0 24px' }} />
       )}
       {width > SCREEN_WIDTH.M &&
         (showMoreButton ? null : (

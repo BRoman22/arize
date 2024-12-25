@@ -5,23 +5,11 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
   user-select: none;
-}
 
-.button__large {
-  height: 4.4001rem;
+  font-size: max(14px, 1.4em);
   padding: 1.30001rem 2.8rem;
-  font-size: 1.4em;
-  font-size: min(14px);
   line-height: 1.142;
   border-radius: 4.4001rem;
-}
-
-.button__small {
-  height: 3.2001rem;
-  padding: 0.9rem 2rem;
-  font-size: 1.2em;
-  line-height: 1;
-  border-radius: 3.2001rem;
 }
 
 .button__primary {

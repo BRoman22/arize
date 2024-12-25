@@ -6,3 +6,11 @@ export type TInvestCard = {
   subtitle: string;
   backImage: string;
 };
+
+export type TSuccesCard = {
+  id: number;
+  name: string;
+  titleImage: string;
+  rate: string;
+  subtitle: string;
+};

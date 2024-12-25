@@ -19,33 +19,6 @@
   }
 }
 
-.link {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-  height: 32px;
-  cursor: pointer;
-
-  &:hover {
-    svg {
-      fill: #5d32ef;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-}
-
-.rotate {
-  /* transform: rotateZ(-90deg); */
-  /* transform: rotateY(90deg); */
-  transform: rotateY(180deg);
-
-  /* rotate: 0 1 1 90deg; */
-  // rotate: y 180deg;
-  /* rotate: 90deg, 90deg, 0; */
-
-  transition: all 0.5s ease-in-out;
-}
-
 @media screen and (max-width: 768px) {
   .carousel__list {
     padding: 0 24px;

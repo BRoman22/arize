@@ -1,0 +1,24 @@
+.button {
+  font-family: Roboto;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  user-select: none;
+  min-height: 32px;
+  padding: max(1rem, 10px) max(2rem, 20px);
+  font-size: max(1.2em, 12px);
+  line-height: 1;
+  border-radius: max(32px, 3.2001rem);
+  background-color: var(--black);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--violet);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    pointer-events: none;
+  }
+}

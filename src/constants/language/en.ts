@@ -106,6 +106,10 @@ const enLangConfig = {
     title: 'About us',
     button: 'Learn more about us',
   },
+  succesStories: {
+    title: 'Success stories',
+  },
+  buttonSucces: 'More details',
   buttonContact: 'Сontact us',
   investCard: ['More details', 'Invest'],
 };
