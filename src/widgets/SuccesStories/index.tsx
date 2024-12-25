@@ -6,7 +6,7 @@ import { useResaize } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
 import GitLabMock from '../../assets/images/GitLabMock.svg';
 
-const Carousel = () => {
+const SuccesStories = () => {
   const { title } = useContext(LangContext).succesStories;
   const width = useResaize();
   const [rotate, setRotate] = useState(false);
@@ -77,4 +77,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default SuccesStories;

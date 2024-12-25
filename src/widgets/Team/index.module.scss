@@ -1,0 +1,59 @@
+.section {
+  padding: 6rem 0 4rem 6rem;
+  position: relative;
+}
+
+.title {
+  font-family: Fors;
+  font-size: 6em;
+  font-weight: 500;
+  line-height: 1;
+  user-select: none;
+  font-variant: small-caps;
+
+  em {
+    font-weight: 600;
+    color: var(--violet);
+  }
+}
+
+.subtitle {
+  font-family: Fors;
+  font-size: 3.2em;
+  font-weight: 400;
+  line-height: 1.125;
+  padding: 3.2rem 0 0;
+  user-select: none;
+  font-variant: small-caps;
+}
+
+.decorator1 {
+  width: max(2.8rem, 28px);
+  height: max(2.8rem, 28px);
+  position: absolute;
+  top: max(6rem, 60px);
+  right: max(6rem, 60px);
+  background-color: var(--black);
+}
+
+.decorator2 {
+  position: absolute;
+  bottom: max(4rem, 40px);
+  left: max(6rem, 60px);
+  width: max(4rem, 40px);
+  height: max(4rem, 40px);
+}
+
+.decorator3 {
+  position: absolute;
+  bottom: max(4rem, 40px);
+  right: max(6rem, 60px);
+  width: max(8rem, 80px);
+  height: max(8rem, 80px);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 32px 24px;
+  }
+}

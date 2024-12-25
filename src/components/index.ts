@@ -5,9 +5,12 @@ export { default as Button } from './Button';
 export { default as ButtonSmall } from './ButtonSmall';
 export { default as InvestCard } from './InvestCard';
 export { default as SuccesCard } from './SuccesCard';
+export { default as TeamCard } from './TeamCard';
 
 export { default as Arrow } from './ui/Arrow';
 export { default as Logo } from './ui/Logo';
 export { default as BurgerIcon } from './ui/BurgerIcon';
 export { default as CloseCross } from './ui/CloseCross';
 export { default as Ball } from './ui/Ball';
+export { default as Decorator2 } from './ui/Decorator2';
+export { default as Decorator3 } from './ui/Decorator3';

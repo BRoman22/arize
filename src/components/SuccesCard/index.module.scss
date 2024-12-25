@@ -4,6 +4,16 @@
   flex-direction: column;
   border: 0.5px solid var(--black);
   align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: max(0.7rem, 7px) max(0.5rem, 5px) max(0.5rem, 5px) 0px
+      rgba(117, 116, 116, 0.1);
+
+    span {
+      color: var(--violet);
+    }
+  }
 
   img {
     width: 100%;

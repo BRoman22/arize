@@ -38,7 +38,7 @@ const InvestSection = () => {
   return (
     <section id="invest">
       <h1 className={styles.title}>
-        <span>{title.charAt(0)}</span>
+        <em>{title.charAt(0)}</em>
         {title.slice(1, title.length)}
       </h1>
       <h2 className={styles.subtitle}>{subtitle}</h2>

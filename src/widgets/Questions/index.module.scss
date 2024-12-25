@@ -1,0 +1,14 @@
+.title {
+  font-family: Fors;
+  font-size: 6em;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0 6rem 6rem;
+  user-select: none;
+  font-variant: small-caps;
+
+  em {
+    font-weight: 600;
+    color: var(--violet);
+  }
+}

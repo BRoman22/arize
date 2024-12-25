@@ -1,0 +1,65 @@
+.card {
+  width: 64.8rem;
+  height: 64.8rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.card__content {
+  width: calc(100% - max(3.2rem, 32px));
+  background-color: var(--white);
+  position: absolute;
+  bottom: max(1.6rem, 16px);
+  left: max(1.6rem, 16px);
+  padding: max(1.6rem, 16px);
+  border-radius: max(1.6rem, 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: max(0.4rem, 4px);
+}
+
+.name {
+  font-family: Fors;
+  font-size: max(1.4em, 14px);
+  font-weight: 700;
+  line-height: 1;
+  font-variant: small-caps;
+}
+
+.position {
+  font-family: Roboto;
+  font-size: max(1.2em, 12px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 60rem;
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 664px;
+    height: 664px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    width: 288px;
+    height: 288px;
+  }
+}

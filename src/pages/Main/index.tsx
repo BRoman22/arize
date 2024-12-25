@@ -5,6 +5,8 @@ import {
   InvestScheme,
   AboutUs,
   SuccesStories,
+  Team,
+  Questions,
 } from '../../widgets';
 
 const Main = () => {
@@ -16,6 +18,8 @@ const Main = () => {
       <InvestScheme />
       <AboutUs />
       <SuccesStories />
+      <Team />
+      <Questions />
     </>
   );
 };

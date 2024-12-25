@@ -14,3 +14,9 @@ export type TSuccesCard = {
   rate: string;
   subtitle: string;
 };
+
+export type TTeamCard = {
+  name: string;
+  position: string;
+  photo: string;
+};
