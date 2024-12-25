@@ -29,7 +29,7 @@ const Team = () => {
   ));
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="team">
       <h1 className={styles.title}>
         <em>{title.slice(0, 1)}</em>
         {title.slice(1)}
