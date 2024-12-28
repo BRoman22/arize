@@ -6,6 +6,7 @@ export { default as ButtonSmall } from './ButtonSmall';
 export { default as InvestCard } from './InvestCard';
 export { default as SuccesCard } from './SuccesCard';
 export { default as TeamCard } from './TeamCard';
+export { default as Select } from './Select';
 
 export { default as Arrow } from './ui/Arrow';
 export { default as Logo } from './ui/Logo';
@@ -14,3 +15,5 @@ export { default as CloseCross } from './ui/CloseCross';
 export { default as Ball } from './ui/Ball';
 export { default as Decorator2 } from './ui/Decorator2';
 export { default as Decorator3 } from './ui/Decorator3';
+export { default as Question } from './ui/Question';
+export { default as ArrowDown } from './ui/ArrowDown';

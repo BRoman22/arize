@@ -20,3 +20,9 @@ export type TTeamCard = {
   position: string;
   photo: string;
 };
+
+export type TQuestions = {
+  id: number;
+  question: string;
+  answer: string;
+};

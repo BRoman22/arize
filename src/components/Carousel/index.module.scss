@@ -1,5 +1,4 @@
 .carousel__list {
-  padding: 0 max(6rem, 60px);
   gap: max(2.4rem, 24px);
   display: flex;
   overflow-x: scroll;
@@ -16,11 +15,5 @@
   &::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .carousel__list {
-    padding: 0 24px;
   }
 }

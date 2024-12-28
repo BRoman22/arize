@@ -1,5 +1,5 @@
 .section {
-  padding: 6rem 0 4rem 6rem;
+  margin: 6rem 0 15.6rem 6rem;
   position: relative;
 }
 
@@ -22,7 +22,7 @@
   font-size: 3.2em;
   font-weight: 400;
   line-height: 1.125;
-  padding: 3.2rem 0 0;
+  padding: 3.2rem 0 6rem;
   user-select: none;
   font-variant: small-caps;
 }
@@ -38,22 +38,31 @@
 
 .decorator2 {
   position: absolute;
-  bottom: max(4rem, 40px);
-  left: max(6rem, 60px);
+  bottom: max(-11.6rem, -116px);
   width: max(4rem, 40px);
   height: max(4rem, 40px);
 }
 
 .decorator3 {
   position: absolute;
-  bottom: max(4rem, 40px);
+  bottom: max(-11.6rem, -116px);
   right: max(6rem, 60px);
   width: max(8rem, 80px);
   height: max(8rem, 80px);
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    padding: 32px 24px;
+  .section {
+    margin: 40px 0 64px 24px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 1.166;
+    padding: 20px 0 32px;
   }
 }

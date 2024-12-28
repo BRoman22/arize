@@ -61,7 +61,7 @@ const InvestSection = () => {
           ))}
         </ul>
       ) : (
-        <Carousel data={carouselData} style={{ margin: '32px 0 24px' }} />
+        <Carousel data={carouselData} style={{ margin: '32px 0 24px 24px' }} />
       )}
       {width > SCREEN_WIDTH.M &&
         (showMoreButton ? null : (

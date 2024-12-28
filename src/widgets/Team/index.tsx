@@ -35,7 +35,7 @@ const Team = () => {
         {title.slice(1)}
       </h1>
       <p className={styles.subtitle}>{subtitle}</p>
-      <Carousel data={cards} style={{ padding: '6rem 0 11.6rem' }} />
+      <Carousel data={cards} />
       {width > SCREEN_WIDTH.M && <div className={styles.decorator1} />}
       {width > SCREEN_WIDTH.M && <Decorator2 nameClass={styles.decorator2} />}
       {width > SCREEN_WIDTH.M && <Decorator3 nameClass={styles.decorator3} />}

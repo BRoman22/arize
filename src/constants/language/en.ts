@@ -115,6 +115,7 @@ const enLangConfig = {
   },
   questions: {
     title: 'Frequently asked questions',
+    altTitle: 'FAQ',
   },
   buttonSucces: 'More details',
   buttonContact: 'Сontact us',
