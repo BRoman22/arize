@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: max(2.4rem, 24px);
+}
+
+.list {
+  display: flex;
+  gap: max(2.4rem, 24px);
+  justify-content: space-around;
+  // min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.wrapper:hover .list {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}

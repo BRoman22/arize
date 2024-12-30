@@ -6,3 +6,4 @@ export { default as AboutUs } from './AboutUs';
 export { default as SuccesStories } from './SuccesStories';
 export { default as Team } from './Team';
 export { default as Questions } from './Questions';
+export { default as TickerLine } from './TickerLine';

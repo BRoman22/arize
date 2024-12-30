@@ -26,3 +26,8 @@ export type TQuestions = {
   question: string;
   answer: string;
 };
+
+export type TTickerCard = {
+  id: number;
+  logo: string;
+};

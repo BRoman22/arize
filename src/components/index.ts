@@ -7,6 +7,7 @@ export { default as InvestCard } from './InvestCard';
 export { default as SuccesCard } from './SuccesCard';
 export { default as TeamCard } from './TeamCard';
 export { default as Select } from './Select';
+export { default as TickerCard } from './TickerCard';
 
 export { default as Arrow } from './ui/Arrow';
 export { default as Logo } from './ui/Logo';

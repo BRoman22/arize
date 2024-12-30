@@ -7,6 +7,7 @@ import {
   SuccesStories,
   Team,
   Questions,
+  TickerLine,
 } from '../../widgets';
 
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
       <SuccesStories />
       <Team />
       <Questions />
+      <TickerLine />
     </>
   );
 };
