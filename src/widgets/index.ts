@@ -7,3 +7,4 @@ export { default as SuccesStories } from './SuccesStories';
 export { default as Team } from './Team';
 export { default as Questions } from './Questions';
 export { default as TickerLine } from './TickerLine';
+export { default as ContactsSection } from './ContactsSection';

@@ -29,14 +29,14 @@ const InvestCard = ({ cardData }: InvestCardProps) => {
           <p className={styles.subtitle}>{subtitle}</p>
           {width > SCREEN_WIDTH.M && (
             <div className={styles.buttons}>
-              <Button title={investCard[0]} type="primary" />
-              <Button title={investCard[1]} type="secondary" />
+              <Button title={investCard[0]} variant="primary" />
+              <Button title={investCard[1]} variant="secondary" />
             </div>
           )}
         </div>
       </div>
       {width <= SCREEN_WIDTH.M && (
-        <Button title={investCard[0]} type="accentBlack" />
+        <Button title={investCard[0]} variant="accentBlack" />
       )}
     </>
   );

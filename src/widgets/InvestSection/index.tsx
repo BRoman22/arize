@@ -67,7 +67,7 @@ const InvestSection = () => {
         (showMoreButton ? null : (
           <Button
             title={showButton}
-            type={'accentBlack'}
+            variant="accentBlack"
             onClick={handleShowMoreButton}
           />
         ))}

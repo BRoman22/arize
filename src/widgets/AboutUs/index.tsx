@@ -34,7 +34,7 @@ const AboutUs = () => {
         playIcon={<img src={play} alt="play" />}
         light={<img src={thumbnailMock} alt="thumbnail" />}
       />
-      <Button title={button} type="accentBlack" />
+      <Button title={button} variant="accentBlack" />
     </section>
   );
 };

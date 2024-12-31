@@ -31,7 +31,7 @@ const ArizeSection = () => {
       ) : (
         <Button
           title={buttonContact}
-          type="accentViolet"
+          variant="accentViolet"
           style={{
             position: 'absolute',
             bottom: 0,

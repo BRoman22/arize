@@ -8,6 +8,7 @@ import {
   Team,
   Questions,
   TickerLine,
+  ContactsSection,
 } from '../../widgets';
 
 const Main = () => {
@@ -22,6 +23,7 @@ const Main = () => {
       <Team />
       <Questions />
       <TickerLine />
+      <ContactsSection />
     </>
   );
 };

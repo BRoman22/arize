@@ -117,6 +117,17 @@ const enLangConfig = {
     title: 'Frequently asked questions',
     altTitle: 'FAQ',
   },
+  contacts: {
+    title: 'Join us in shaping the future',
+    inputsPlaceholder: ['First name', 'Last name', 'Phone number', 'Comment'],
+    inputSubtitle: 'If you have any questions, we will be happy to answer them',
+    errorText: 'Required field is not filled out',
+    button: 'Сontact us',
+    privacyText: [
+      'By clicking on “Contact us”, you accept the privacy policy',
+      'Transmitted data',
+    ],
+  },
   buttonSucces: 'More details',
   buttonContact: 'Сontact us',
   investCard: ['More details', 'Invest'],

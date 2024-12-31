@@ -10,7 +10,7 @@
   display: flex;
   gap: max(2.4rem, 24px);
   justify-content: space-around;
-  // min-width: 100%;
+  min-width: 100%;
   animation: scroll 20s linear infinite;
 }
 
@@ -24,5 +24,11 @@
   }
   to {
     transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    min-width: auto;
   }
 }

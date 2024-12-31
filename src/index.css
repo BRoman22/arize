@@ -70,4 +70,5 @@ em {
   --black: rgba(2, 5, 4, 1);
   --white: rgba(252, 251, 255, 1);
   --violet: rgba(93, 50, 239, 1);
+  --error: rgba(183, 9, 9, 1);
 }
