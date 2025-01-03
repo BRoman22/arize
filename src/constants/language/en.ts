@@ -25,6 +25,11 @@ const enLangConfig = {
       value: 'contacts',
     },
   ],
+  footer: {
+    connect: 'Connect:',
+    privacy: 'Privacy Policy',
+    address: 'Address:',
+  },
   capitalSection: {
     subtitleHeader: 'Unlocking value',
     subtitleFooter: 'in the secondary market',

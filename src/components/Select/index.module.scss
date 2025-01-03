@@ -2,8 +2,10 @@
   padding: 0 60px 100px;
 
   li {
-    border-bottom: 0.5px dashed var(--black);
     cursor: pointer;
+    img {
+      width: 100%;
+    }
   }
 
   .div {
@@ -51,6 +53,12 @@
 @media screen and (max-width: 768px) {
   .list {
     padding: 0 24px 40px;
+
+    li {
+      img {
+        object-fit: none;
+      }
+    }
 
     .div {
       padding: 16px 0;

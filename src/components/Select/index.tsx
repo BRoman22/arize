@@ -4,6 +4,7 @@ import { TQuestions } from '../../constants';
 import { Question, ArrowDown } from '../../components';
 import { useResaize } from '../../hooks';
 import { SCREEN_WIDTH } from '../../constants';
+import Line from '../../assets/images/dashedLine.svg';
 
 const mockData: TQuestions[] = [
   {
@@ -73,6 +74,7 @@ const Select = () => {
             />
           </div>
           {item.isOpen && <p className={styles.answer}>{item.answer}</p>}
+          <img src={Line} alt="" />
         </li>
       ))}
     </ul>

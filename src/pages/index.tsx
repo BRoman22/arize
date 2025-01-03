@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main';
-import { Header } from '../components';
+import { Header, Footer } from '../components';
 import { LangContext } from '../contexts';
 import { enLangConfig } from '../constants';
 
@@ -25,6 +25,7 @@ const App = () => {
     <LangContext.Provider value={enLangConfig}>
       <Header />
       <RouterProvider router={router} />
+      <Footer />
     </LangContext.Provider>
   );
 };
